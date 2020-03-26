@@ -1,0 +1,145 @@
+@import 'fonts.sass'
+@import 'variables.sass'
+@import 'mixins.sass'
+@import 'null.sass'
+@import 'modal-menu.sass'
+@import 'slider.sass'
+@import 'verticalmenu.sass'
+@import 'car-model.sass'
+
+body
+	margin: 0
+	padding: 0
+	font-family: Roboto
+	cursor: url(..//img/cursor/Cursor.png), auto
+
+.wpapper
+	display: flex
+	justify-content: space-between
+	width: 100%
+	position: absolute
+	z-index: 10
+
+.pannel
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	padding: 40px 0 20px
+	width: 74px
+	min-width: 74px
+	height: 100vh
+	background: #151B1F
+	>:first-child
+		padding: 0 0 20px
+
+.main
+	width: 50%
+	min-width: 650px
+	height: 100vh
+
+.slider
+	width: 50%
+	height: 100vh
+
+.burger
+	@include burger
+	position: relative
+	&:before
+		content:""
+		@include burger
+		display: block
+		position: absolute
+		top: 10px
+		right: 0
+	&:after
+		content:""
+		@include burger
+		display: block
+		position: absolute
+		top: 20px
+		right: 0
+
+
+.lang
+	color: #0EC261
+	font-weight: 500
+	border: 1px solid transparent
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	text-align: center
+	padding-top: 14px
+	transition: border-color .2s linear
+	&:hover
+		border-color: #fff
+		color: #fff
+
+.container
+	width: 100%
+	margin: 0 auto
+	padding: 35px 50px
+	height: 100%
+
+.main__inner
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: inherit
+
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	.logo
+		font-size: 30px
+		color: $GREEN
+		font-weight: bold
+
+	.geo
+		display: flex
+		align-items: center
+		font-weight: 300
+		font-size: 14px
+		line-height: 16px
+		color: #999
+	.geolocation
+		width: 17px
+		height: 17px
+		margin-right: 5px
+
+.content
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	line-height: 1
+	color: $BLACK
+	position: relative
+	// margin-bottom: 80px
+	h1
+		font-size: 70px
+		font-weight: 700
+		span
+			color: $GREEN
+	h2
+		color: $GRAY
+		font-weight: 300
+		margin: 10px 0 110px
+	.main-btn
+		@include mainbtn ($GREEN, #039F67, 60px)
+
+
+.footer
+	width: 100%
+	display: flex
+	justify-content: space-between
+	font-size: 13px
+	span
+		color: $GRAY
+	a
+		color: $BLACK
+		text-decoration: none
+
