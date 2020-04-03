@@ -1,0 +1,29 @@
+.car-model
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	height: 700px
+	overflow: auto
+	&::-webkit-scrollbar 
+		width: 0
+.car-model__item
+	width: 50%
+	min-width: 270px
+	min-height: 250px
+	border: 1px solid $LGRAY
+	display: flex
+	padding: 10px
+	flex-direction: column
+	font-size: 18px
+	.car-model__value
+		color: $GRAY
+		font-weight: 300
+		font-size: 14px
+	&:hover
+		border: 1px solid $GRAY
+	img	
+		margin-top: 40px
+		object-fit: cover
+		object-position: center
+		align-self: flex-end
+

@@ -1,0 +1,74 @@
+.order
+	padding: 35px 0
+	height: 100%
+
+.content-order
+	display: flex
+	justify-content: space-between
+	padding: 0 50px
+	.dinamic-content
+		padding-top: 35px
+		width: 70%
+	.location__order
+		span
+			font-weight: 300
+	.map
+		width: 85%
+		padding-top: 30px
+	.order-counting
+		padding: 35px 0 0 40px
+		height: inhetit
+		border: 0
+		border-left: 1px solid $LGRAY
+		display: flex
+		flex-direction: column
+		.order-couting__item
+			display: flex
+			justify-content: space-between
+			margin-bottom: 10px
+			font-size: 14px
+			font-weight: 300
+			min-width: 300px
+			&:first-child
+				display: flex
+				justify-content: flex-end
+				font-size: 18px
+				font-weight: 500
+				margin-bottom: 30px
+		.main-btn
+			@include mainbtn ($GREEN, #039F67, 60px)
+		.linear
+			border: 0
+			border-bottom: 1px dotted #000
+		.info
+			color: $GRAY
+.verticalnavigation
+	border-top: 1px solid #EEEEEE
+	border-bottom: 1px solid #EEEEEE
+	padding: 7px 50px
+	a
+		color: #121212
+		text-decoration: none
+		font-size: 14px
+		font-weight: 700
+		margin-right: 10px
+.content-order
+	form
+		display: flex
+		width: 350px
+		flex-wrap: wrap
+		justify-content: flex-end
+		margin-bottom: 30px
+	label
+		margin-bottom: 10px
+		font-weight: 300
+	input
+		border: 0
+		border-bottom: 1px solid $GRAY
+		margin-left: 10px
+		padding: 5px
+		width: 220px
+.header
+	padding: 0 50px 40px
+.price
+	padding: 20px 0 40px

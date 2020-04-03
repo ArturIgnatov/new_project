@@ -1,0 +1,31 @@
+@mixin burger
+	width: 35px
+	height: 4px
+	background: #fff
+	border-radius: 2px
+@mixin mainbtn ($color1, $color2, $padding)
+	align-self: flex-start
+	left: 0
+	bottom: 0
+	background: linear-gradient( to right, $color1 , $color2)
+	padding: 8px 0
+	font-weight: 400
+	font-size: 16px
+	line-height: 21px
+	color: #fff
+	text-decoration: none
+	border-radius: 7px
+	border: none
+	cursor: url(..//img/cursor/Pointer.png), auto
+	span
+		background: rgba( 0, 0 , 0 , 0 )
+		padding: 10px $padding
+		border-radius: inherit
+		transition: background .2s linear
+	&:hover span
+		background: rgba( 0, 0 ,0 , .2)
+	&:focus
+		outline: none
+		span
+			background: rgba( 0, 0 ,0 , .4)
+	
